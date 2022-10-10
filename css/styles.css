@@ -100,7 +100,6 @@ ul {
 .logo {
   padding-top: 24px;
   padding-bottom: 24px;
-  padding-left: 15px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -145,13 +144,6 @@ ul {
   background-color: var(--background-color, black);
 }
 
-/* Блок добавлен для визуального соответсвия макету */
-.hero .conteiner {
-  padding-top: 106px;
-  padding-bottom: 106px;
-}
-/* Конец блока для визуального соответстви макету */
-
 .hero-title {
   margin-bottom: 30px;
   font-weight: 900;
@@ -169,7 +161,6 @@ ul {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   border-radius: 4px;
   border-color: transparent;
   border: transparent;
@@ -189,18 +180,11 @@ ul {
 .benefits .list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--list-item-gap));
-  margin-left: calc(-1 * var(--list-item-gap));
-}
-
-.benefits .list-item {
-  margin-top: var(--list-item-gap);
-  margin-left: var(--list-item-gap);
-  flex-basis: calc(100% / 4 - var(--list-item-gap));
+  gap: var(--list-item-gap);
 }
 
 .benefits-title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -215,6 +199,11 @@ ul {
 }
 
 /* what are we doing */
+
+.work.section {
+  padding-top: 0px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -235,14 +224,7 @@ ul {
 .work .list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--list-item-gap));
-  margin-left: calc(-1 * var(--list-item-gap));
-}
-
-.work .worklist-item {
-  margin-top: var(--list-item-gap);
-  margin-left: var(--list-item-gap);
-  flex-basis: calc(100% / 3 - var(--list-item-gap));
+  gap: var(--list-item-gap);
 }
 
 /* ------ours team------- */
@@ -253,8 +235,7 @@ ul {
 .team .list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--list-item-gap));
-  margin-left: calc(-1 * var(--list-item-gap));
+  gap: var(--list-item-gap);
 }
 
 .team {
@@ -262,9 +243,6 @@ ul {
 }
 
 .team .teamlist-item {
-  margin-top: var(--list-item-gap);
-  margin-left: var(--list-item-gap);
-  flex-basis: calc(100% / 4 - var(--list-item-gap));
   background-color: var(--mainbackground-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -329,7 +307,7 @@ ul {
 
 .location,
 .contacts:not(:last-child) {
-  margin-bottom: 5px;
+  margin-bottom: 9px;
 }
 
 .basement-list .link:hover,
@@ -349,8 +327,9 @@ ul {
 
 /* Кнопрки перехода */
 .presentation-btn {
-  min-height: 38px;
-  min-width: 73px;
+  padding: 6px 22px;
+  /* min-height: 38px;
+  min-width: 73px; */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -360,6 +339,11 @@ ul {
   border-color: transparent;
   color: var(--maintext-color, black);
   background-color: var(--secondarybackground-color, grey);
+  border: transparent;
+}
+
+.presentation-btn.first-btn {
+  padding: 6px 25px;
 }
 
 .presentation-btn:focus,
@@ -370,12 +354,9 @@ ul {
 
 .presentation-nav {
   display: flex;
+  gap: 8px;
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.presentation-item:not(:first-child) {
-  margin-left: 9px;
 }
 
 /* Перзентационные карточки */
@@ -392,7 +373,6 @@ ul {
   margin-top: var(--list-item-gap);
   margin-left: var(--list-item-gap);
   flex-basis: calc(100% / 3 - var(--list-item-gap));
-  border: 1px solid #eeeeee;
 }
 
 .project-card {
@@ -403,9 +383,12 @@ ul {
 }
 
 .project-conteiner {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .project-text {
   color: var(--text-color, gray);
