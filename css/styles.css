@@ -179,8 +179,10 @@ ul {
 
 .benefits .list {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--list-item-gap);
+}
+
+.benefits .list-item:not(:last-child) {
+  margin-right: var(--list-item-gap);
 }
 
 .benefits-title {
@@ -223,8 +225,10 @@ ul {
 
 .work .list {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--list-item-gap);
+}
+
+.work .worklist-item:not(:last-child) {
+  margin-right: var(--list-item-gap);
 }
 
 /* ------ours team------- */
@@ -234,10 +238,11 @@ ul {
 }
 .team .list {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--list-item-gap);
 }
 
+.team .teamlist-item:not(:last-child) {
+  margin-right: var(--list-item-gap);
+}
 .team {
   background-color: var(--secondarybackground-color);
 }
@@ -354,9 +359,12 @@ ul {
 
 .presentation-nav {
   display: flex;
-  gap: 8px;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+.portfolio .presentation-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 /* Перзентационные карточки */
