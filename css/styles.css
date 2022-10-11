@@ -139,6 +139,11 @@ ul {
 
 /* Ефективні рішення */
 
+.hero.section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero {
   text-align: center;
   background-color: var(--background-color, black);
@@ -393,7 +398,8 @@ ul {
 .project-conteiner {
   padding-top: 20px;
   padding-bottom: 20px;
-  text-align: center;
+  padding-left: 24px;
+  padding-right: 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
